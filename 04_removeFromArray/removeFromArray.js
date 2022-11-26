@@ -1,19 +1,16 @@
 
-  const removeFromArray = function (...arg) {
-    let array = arg[0];
+  const removeFromArray = function (...arg){
+
     let newArray = [];
-  
+    let array = [arg[0]];
+
     array.forEach((item) => {
-      if (!arg.includes(item)){
+        if (!arg[0].includes(item)){
         newArray.push(item);
-      }
+        }
     })
-    return newArray;
-  }
-
-
-// store the index of the items to be removed in new array. 
-// loop the splice method to remove it for each element in the new array. 
+}
+  
 
 
 // Do not edit below this line
